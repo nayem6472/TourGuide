@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destinationShowTextView"
+        android:text="Dhaka"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textSize="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinationShowTextView"
+        android:textSize="20dp"
+        android:padding="2dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/fromTextView"
+        android:text="From" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromTextView"
+        android:textSize="22sp"
+        android:padding="2dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/fromDateTextView"
+        android:text="05.02.17" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinationShowTextView"
+        android:textSize="20sp"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/toTextView"
+        android:text="To" />
+    <TextView
+
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/toTextView"
+        android:layout_alignParentRight="true"
+        android:id="@+id/toDateTextView"
+        android:text="10.02.17" />
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Est Budget :"
+        android:textSize="22dp"
+        android:layout_marginLeft="70dp"
+        android:padding="5dp"
+        android:id="@+id/estimatedBudgetTextView"
+        android:layout_below="@id/fromDateTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromDateTextView"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="3000 Tk"
+        android:id="@+id/estimatedAmountTextView"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/estimatedBudgetTextView" />
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AboutUsActivity">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="#e7f4f4">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="150dp">
+            <ImageView
+                android:scaleType="fitCenter"
+                android:src="@drawable/final1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md.Harun-Ur-Rashid"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daffodil International University"
+                android:textSize="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email : haruncse38@gmail.com"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact : 01746910480"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

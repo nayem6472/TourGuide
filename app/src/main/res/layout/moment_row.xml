@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="130dp"
+        android:id="@+id/currentCustomImageView"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="24dp"
+        android:id="@+id/momentTitleTextView"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/currentCustomImageView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="24dp"
+        android:padding="5dp"
+        android:id="@+id/momentDateTextView"
+        android:layout_below="@id/momentTitleTextView"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/currentCustomImageView" />
+
+
+</RelativeLayout>

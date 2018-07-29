@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="update">Update</string>
+    <string name="title_activity_nearby_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="direction_api_key"></string>
+    <string name="title_activity_map_direction">Map</string>
+
+</resources>

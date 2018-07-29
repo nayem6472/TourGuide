@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_moments"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.nayem.tourguide.activity.MomentsActivity">
+    <RelativeLayout
+        android:background="@drawable/background_round_gradient"
+        android:layout_width="match_parent"
+        android:id="@+id/addMomentLayout"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_marginLeft="5dp"
+            android:layout_width="150dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/currentImageIV"
+            android:src="@drawable/moment"
+            android:adjustViewBounds="true"
+            android:layout_height="132dp" />
+        <Button
+            android:background="@drawable/signinbtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/addMomentButton"
+            android:text="Add Moment"
+            android:textColor="@android:color/white"
+
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@id/currentImageIV"
+            />
+        <EditText
+            android:background="@drawable/background_round_gradient"
+            android:layout_below="@id/addMomentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/momentTitleEditText"
+            android:hint="Title"
+            android:textSize="22dp"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/currentImageIV"/>
+        <EditText
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/momentDescriptionEditText"
+            android:hint="Description"
+            android:textSize="22dp"
+            android:padding="10dp"
+            android:background="@drawable/background_round_gradient"
+            android:layout_below="@id/momentTitleEditText"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/currentImageIV"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/camera"
+            android:onClick="startCamera"
+            android:id="@+id/camera"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@id/momentDescriptionEditText"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/album"
+            android:layout_below="@id/momentDescriptionEditText"
+            android:layout_toRightOf="@id/camera"
+            android:layout_marginLeft="100dp"
+            android:onClick="pickImageFromGallery"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <ListView
+        android:dividerHeight="5dp"
+        android:divider="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:id="@+id/momentDetailsListView"
+        android:background="@drawable/background_round_gradient"
+        android:layout_below="@id/addMomentLayout"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</RelativeLayout>

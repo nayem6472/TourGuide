@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_expense"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nayem.tourguide.activity.ExpenseActivity">
+    <LinearLayout
+        android:id="@+id/addEexpenseLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="#2f545454"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Title : "
+
+            android:textSize="24sp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/expenseTitleEditText"
+                android:textSize="24sp"
+                android:hint="title"
+                android:inputType="text"
+                android:gravity="center_vertical|end"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amount : "
+
+                android:textSize="24sp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/expenseAmountEditText"
+                android:textSize="24sp"
+                android:hint="amount"
+                android:inputType="numberDecimal"
+                android:gravity="center_vertical|end"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/expenseAddButton"
+                android:textSize="20sp"
+                android:text="Add"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:background="@drawable/signinbtn"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/totalEexpenseLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#2f545454"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Total : "
+
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="#000"
+                android:id="@+id/expenseTotalTextView"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="center_vertical|end"/>
+        </LinearLayout>
+        <!-- SnackBar
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#484848"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:id="@+id/sncakbarTextView"/>
+        </LinearLayout>
+        -->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/expenseAllLayout"
+        android:layout_below="@id/addEexpenseLayout"
+        android:orientation="vertical"
+        android:layout_above="@id/totalEexpenseLayout">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/expenseAllListView">
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>
